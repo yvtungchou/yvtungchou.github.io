@@ -1,9 +1,38 @@
 body {
-    background: pink;
+  font-family: Courier;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav_bar {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.nav_bar > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+  text-decoration: underline;
 }
 
 
-div.important {
-    font-weight: bold;
-    font-size: 1000%;
+.profile {
+  display: flex;
+}
+
+.profile > div {
+  margin: 10px;
+  padding: 20px;
 }
