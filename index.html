@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yutongzh's homepage</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <script>
+            fetch("/props/nav_bar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data)
+                .catch(error => console.error("Error loading navbar:", error));
+        </script>
+        <div class="content">
+            <div class="profile">
+                <div class="profile_pic">
+                    <img src="/images/profile_pic.png" alt="profile picture" style="width: 175px">
+                </div>
+                <div>
+                    <h1>Yutong Zhou</h1>
+                    <p>Undergraduate student at University of Michigan, Ann Arbor (2022 - present)</p>
+                    <p>Majoring in Mathematics and Computer Science</p>
+                    <p>yutongzh@umich.edu</p>
+                </div>
+            </div>
+            <div class="intro">
+                I'm currently participating in a robotics research in <a href="https://www.roahmlab.com/">the Roahm Lab</a>. The research opportunity is given by Professor <a href="https://me.engin.umich.edu/people/faculty/ramanarayan-vasudevan/">Ram Vasudevan</a> and mentored by two PhD candidates in the lab. My interest lies in trajectory generation and motion planning, where optimization, dynamics and software engineering intersect.
+            </div>
+        </div>
+    </body>
+</html>

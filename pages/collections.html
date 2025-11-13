@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yutongzh's experience</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+      <div id="navbar"></div>
+      <script>
+          fetch("/props/nav_bar.html")
+              .then(response => response.text())
+              .then(data => document.getElementById("navbar").innerHTML = data)
+              .catch(error => console.error("Error loading navbar:", error));
+      </script>
+
+        <div class="experience">
+            <div class="profile_pic">
+                <p>profile img</p>
+            </div>
+            <div>
+                <h1>Yutong Zhou</h1>
+                <p>Undergraduate student at University of Michigan, Ann Arbor</p>
+                <p>Majoring in <b>Mathematics</b> and <b>Computer Science</b></p>
+                <p>yutongzh@umich.edu</p>
+            </div>
+        </div>
+    </body>
+</html>

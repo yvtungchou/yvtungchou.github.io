@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yutongzh's research & projects</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <script>
+            fetch("/props/nav_bar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data)
+                .catch(error => console.error("Error loading navbar:", error));
+        </script>
+        <div class="content">
+            <div>
+                <h1>Research : </h1>
+                <div>
+                    <h2>&bull; <a href="https://roahmlab.github.io/BLAZE/">Phasing Through the Flames: Rapid Motion Planning with the AGHF PDE for Arbitrary Objective Functions and Constraints</a></h2>
+                    <p>The generation of optimal trajectories for high-dimensional robotic systems under constraints remains 
+                        computationally challenging due to the need to simultaneously satisfy dynamic feasibility, input limits, 
+                        and task-specific objectives while searching over high-dimensional spaces. This paper generalizes the <a href="https://www.sciencedirect.com/science/article/pii/S2405896319317768">AGHF</a> 
+                        formulation to accommodate arbitrary cost functions, significantly expanding the classes of trajectories that 
+                        can be generated. It also introduces Phase1 - Phase 2 Algorithm that enables the use of constraint-violating 
+                        initial guesses while guaranteeing satisfactory convergence.</p>
+                    <div style="text-align: center;">
+                        <video width="640" height="480" autoplay muted controls>
+                            <source src="/videos/scenario_1_hardware.mp4" type="video/mp4">
+                            Your browser does not support the video.
+                        </video>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <h1>Projects :</h1>
+                <div>
+                    <h2>&bull; <a href="/files/convex_optimization.pdf">Arbitrary Dimensional Linear Optimization Solver</a></h2>
+                    <div style="margin-left: 30px;">
+                        <p>
+                            This article focuses on solving a subclass of convex optimization problem called linear program, 
+                            where the objective function and constraint functions are all linear. I designed and implemented a numerical 
+                            linear program solver that can be applied to arbitrary dimension. 
+                            This solver can be extended to solving an arbitrary convex problem with little effort by replacing analytical derivatives with numerical derivatives.
+                        </p>
+                        <div style="text-align: center;">
+                            <img src="/images/linear_pb.png" alt="an illustration of linear program solving process">
+                        </div>
+                        <div style="padding-inline: 60px;">
+                            <p>An illustration of the solving process, where there is a linear objective function, along with both inequality constraints (red) and equality constraints (grey).</p>
+                        </div>
+                        <p>
+                            Here I must give special thank to Professor <a href="https://berenson.robotics.umich.edu/">Dmitry Berenson</a>. This project is initially a final project of <a href="https://berenson.robotics.umich.edu/courses/fall2024iar/">his robotics course</a>.
+                        </p>
+                        <p>
+                            Github repo with demo : <a href="https://github.com/yvtungchou/Convex-Optimization-solver">Convex-Optimization-solver</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

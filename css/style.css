@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Intel Clear';
+  src: url('fonts/ClearSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Intel Clear';
+  src: url('fonts/IntelClear-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+} */
+
+body {
+  font-family: 'Intel Clear';
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav_bar {
+  display: flex;
+  background-color: #0068B5;
+}
+
+.nav_bar > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+  text-decoration: underline;
+}
+
+
+.profile {
+  display: flex;
+}
+
+.profile > div {
+  margin: 10px;
+  padding: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yutongzh's experience</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <script>
+            fetch("/props/nav_bar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data)
+                .catch(error => console.error("Error loading navbar:", error));
+        </script>
+
+        <div class="content">
+            <div>
+                <h1>University of Michigan, Ann Arbor (2022 - present)</h1>
+                <p>
+                    At University of Michigan, I'm a junior undergraduate student studying Mathematics and Computer Science at School of Literature, Art and Science.
+                    I was awarded M.S. Keeler Department of Mathematics Merit Scholarship. I get straight A+ in almost every major courses.
+                </p>
+                <div>
+                    <h2>&bull; <a href="https://www.roahmlab.com/">Roahm Lab</a></h2>
+                    <div style="margin-left: 30px;">
+                        <p>
+                            Undergraduate researcher (2024 - present)
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2>&bull; <a href="https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html">Math Learning Center</a></h2>
+                    <div style="margin-left: 30px;">
+                        <p>
+                            Math tutor, manager (2022 - 2024)
+                        </p>
+                        <p>
+                            At Math Learning Center, I tutor all fundamental math courses for undergraduate students, ranging from Calculus, Algebra to Analysis. I'm especially good at tutoring Multivariable Calculus.
+                        </p>
+                        <div style="text-align: center;">
+                            <img src="/images/mathlab.JPG" width="600" alt="a pic of the mathlab">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Southwest Jiaotong University, Chengdu (2020 - 2022)</h1>
+                <div style="margin-left: 30px;">
+                    <p>
+                        Before transferring to University of Michigan, I was admitted to Southwest Jiaotong University through National Higher Education Entrance Examination in China. 
+                        At School of Mechanics and Engineering, I ranked 1st in the Training Program of Top class.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
